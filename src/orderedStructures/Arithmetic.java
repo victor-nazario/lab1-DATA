@@ -58,7 +58,7 @@ public class Arithmetic extends Progression implements Combinable{
 			throw new NullPointerException("The object upon which this method is invoked on contains a null pointer."); 
 			}
 		
-		double commonDiff = prog.getTerm(1) - prog.getTerm(0); 
+		double commonDiff = prog.getTerm(2) - prog.getTerm(1); 
 		
 		return new Arithmetic(this.firstValue() + prog.firstValue(), this.commonDifference + commonDiff); 
 		}
@@ -78,7 +78,7 @@ public class Arithmetic extends Progression implements Combinable{
 			throw new NullPointerException("The object upon which this method is invoked on contains a null pointer."); 
 			}
 		
-		double commonDiff = prog.getTerm(1) - prog.getTerm(0); 
+		double commonDiff = prog.getTerm(2) - prog.getTerm(1); 
 		
 		return new Arithmetic(this.firstValue() - prog.firstValue(), this.commonDifference - commonDiff); 
 	}
