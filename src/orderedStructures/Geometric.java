@@ -55,7 +55,7 @@ public class Geometric extends Progression implements Combinable{
 			throw new NullPointerException("The object upon which this method is invoked on contains a null pointer."); 
 			}
 		
-		double commonFactor = (prog.getTerm(1)/prog.getTerm(0)); 
+		double commonFactor = (prog.getTerm(2)/prog.getTerm(1)); 
 		
 		return new Geometric(this.firstValue() + prog.firstValue(), this.commonFactor + commonFactor); 
 		}
@@ -74,7 +74,7 @@ public class Geometric extends Progression implements Combinable{
 			throw new NullPointerException("The object upon which this method is invoked on contains a null pointer."); 
 			}
 		
-		double commonFactor = (prog.getTerm(1)/prog.getTerm(0)); 
+		double commonFactor = (prog.getTerm(2)/prog.getTerm(1)); 
 		
 		return new Geometric(this.firstValue() - prog.firstValue(), this.commonFactor - commonFactor); 
 	}
