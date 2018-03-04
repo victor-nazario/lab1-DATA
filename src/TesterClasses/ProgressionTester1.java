@@ -29,7 +29,6 @@ public class ProgressionTester1 {
 		p = new Arithmetic(2, 3); 
 		p.printAllTerms(20);
 	
-
 		
 	}
 
