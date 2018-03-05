@@ -50,8 +50,8 @@ public class Geometric extends Progression implements Combinable{
 	 */
 	
 	@Override
-	public Progression addProgression(Progression prog) throws NullPointerException{	 
-		if (this == null || prog == null) { 
+	public Progression addProgression(Progression prog) throws NullPointerException{	
+		if ((Geometric)prog == null) { 
 			throw new NullPointerException("The object upon which this method is invoked on contains a null pointer."); 
 			}
 		
@@ -70,7 +70,7 @@ public class Geometric extends Progression implements Combinable{
 	
 	@Override
 	public Progression substractProgression(Progression prog) throws NullPointerException{
-		if (this == null || prog == null) { 
+		if ((Geometric)prog == null) { 
 			throw new NullPointerException("The object upon which this method is invoked on contains a null pointer."); 
 			}
 		
